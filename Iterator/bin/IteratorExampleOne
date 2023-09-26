@@ -1,0 +1,22 @@
+import Java.Util.ArrayList;
+import Java.Util.Iterator;
+
+public class IteratorExampleOne {
+
+    public static void main(String[] args){
+        ArrayList<String> nomes = new ArrayList<>();
+        nomes.add("Lucas");
+        nomes.add("Gustavo");
+        nomes.add("Roberta");
+        nomes.add("João");
+        nomes.add("Camila");
+        nomes.add("Jairo");
+
+        Iterator<String> iteratorNames = nomes.iterator();
+
+        System.out.println("Nomes:");
+        while(iteratorNames.hasNext()){
+            System.out.println(iteratorNames.next() + ",");
+        }
+    }
+}
